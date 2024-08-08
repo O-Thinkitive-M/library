@@ -16,9 +16,8 @@ public class LibraryServiceImpl implements LibraryService {
 
     @Override
     public Long createLibrary(Library library) {
-        Library l=libraryRepo.save(library);
-        return l.getId();
-
+        Library lib=libraryRepo.save(library);
+        return lib.getId();
     }
 
     @Override
