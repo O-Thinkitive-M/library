@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: library_id
+      author: om
+      changes:
+        - createTable:
+            tableName: library
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: name
+                  type: VARCHAR(255)
